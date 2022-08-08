@@ -12,7 +12,7 @@ header{
     padding: 20px;
     text-align: center;
     position: fixed;
-    width: 50%;
+    width: 100%;
     z-index: 1 ;/*used to bring an element forword or backwards making it positive brings it forward and negative brings it backwards*/
     top: 0px;
     left: 0px;
@@ -29,15 +29,15 @@ header h1{
     position: relative;
 }
 .banner img{
-    max-width:100px;
+    max-width:100%;
 }
-.banner .welcom{
+.banner .welcome{
     background-color: burlywood;
     color: darkslategrey;
     padding: 30px;
     position: absolute;
     left: 0px;
-    top: 30%;
+    top: 20%;
 }
 .banner h2{
     font-size: 74px;
@@ -49,7 +49,7 @@ nav{
     background-color: bisque;
     padding: 20px;
     position: sticky;
-    top:140px;
+    top:108px;
 }
 nav ul{
     white-space: nowrap;
@@ -97,8 +97,8 @@ article p{
 .images li img{
     max-width: 100%
 }
-section .join{
-    background-color: black;
+section.join{
+    background-color: #9e9e9e40;
     text-align:center;
     padding: 60px 20px;
     color: cornflowerblue;
@@ -118,4 +118,20 @@ footer{
     color: white;
     text-align: center;
     padding:10px
+}
+/* pseudo classes*/
+nav li a:hover{
+    text-decoration: underline;
+}
+.images li :hover{
+    position: relative;
+    top:-4px;
+}
+form input:focus{
+    border:4px dashed #4b4b4b;
+    outline:none;
+}
+form input:valid{
+    border:4px solid greenyellow;
+    
 }
