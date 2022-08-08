@@ -8,16 +8,39 @@
         <h1>Html Forms</h1>
         <form>
             <label for = "username">Enter Username:</label>
-            <input type ="text" id = "username">
+            <input type ="text" id = "username" name = "username" placeholder="username">
             <br>
             <label for ="email"> Enter Email:</label>
-            <input type = "email" id = "email">
+            <input type = "email" id = "email" name = "email" placeholder="email" required >
             <br>
-            <label for = "date">Enter Date:</label>
-            <input type = "date" id="date">
+            <label for = "date">Enter BirthDate:</label>
+            <input type = "date" id="date" name = "date" placeholder="date">
             <br>
             <label for = "pass">Enter Password:</label>
-            <input type = "password" id ="pass">
+            <input type = "password" id ="pass" name = "pass" placeholder="password " required>
+            <br>
+            <label for ="gender">Select your Gender</label>
+            <input type ="radio" id ="gender" name = "gender" value ="male">Male<br>
+            <input type ="radio" id="gender" name = "gender" value ="female">Female<br>
+            <input type ="radio" id="gender" name = "gender" value ="other">other<br>
+           
+            <br><br>
+
+            <label for="">Security Questions </label>
+            <select name ="questions " id="questions ">
+                <option value ="q1">Where did you eat</option>
+
+            </select>
+            <br><br>
+            <label for ="answer">Security Question answer </label>
+            <input type="text" id = "answer " name ="answer">
+
+            <br><br>
+
+            <label for ="bio"> Your bio </label><br>
+            <textarea name = "bio" id = "bio" cols="30" rows="10"placeholder="about you...."></textarea>
+            <br><br>
+            <input type="submit" value="Submit">
         </form>
     </body>
 </html>
