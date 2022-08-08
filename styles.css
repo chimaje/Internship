@@ -133,5 +133,15 @@ form input:focus{
 }
 form input:valid{
     border:4px solid greenyellow;
-    
+
 }
+article p::first-line{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+section.join p::first-letter{
+    font-size: 1.5em;
+}
+/* nav li:first-child{
+    border:3px solid red;
+} */
