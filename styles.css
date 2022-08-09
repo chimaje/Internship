@@ -142,6 +142,29 @@ article p::first-line{
 section.join p::first-letter{
     font-size: 1.5em;
 }
+ p::selection{
+    background-color: coral;
+    color: white;
+}
+p::after{
+    content:'.....';
+}
 /* nav li:first-child{
     border:3px solid red;
 } */
+@media screen and (max-width: 1400px){
+    .banner .welcome h2{
+        font-size: 45px;
+    }
+    nav li{
+        font-size: 18px ;
+    }
+}
+@media screen and (max-width: 980px){
+    .banner .welcome h2{
+        font-size: 40px;
+    }
+    nav li{
+        font-size: 18px ;
+    }
+}
