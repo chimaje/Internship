@@ -50,3 +50,14 @@
 .blog_preview a{
   text-decoration: none;
 }
+.blog-dets h2{
+  font-size: 40px;
+  color:#f1356d;
+  margin-bottom: 10px;
+}
+.blog-dets div{
+  text-align: left;
+  margin-right: 0px;
+  margin-bottom: 8px;
+  margin: 2px 0;
+}
