@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Bloglist from "./bloglist";
 
 const Home = ()=>{
@@ -24,11 +24,15 @@ const Home = ()=>{
         const new_blog = blogs.filter(blog=>blog.id !== id);
         setBlogs(new_blog);
     }
+    useEffect(()=>{
+        console.log('use effct worked');
+        console.log(names);
+    },[names]);
     return(
         <div className="home">
             <h2> Home Page</h2>
             <Bloglist blogger={blogs} title="All Blogs" handleDelete={handleDelete}/>
-            <Bloglist blogger={blogs.filter((blogs)=>blogs.author==='mario')} title="Mario's Blogs"/>
+            <Bloglist blogger={blogs.filter((blogs)=>blogs.author==='mario')} title="Mario's Blogs" handleDelete={handleDelete}/>
             <p>{names} is {age} years old</p>
             <button onClick={(handclick)}>Click me</button>
             <button onClick={(e) =>handclickaga(prompt("What is your name?"),e)}> Click me again</button>
