@@ -3,6 +3,7 @@ import Navbar from './navbar';
 import Home from './Home';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import Create from './Create';
+import BlogDetails from './BlogDetails';
 
 function App() {
   // const title='welcome to the new blog';
@@ -21,6 +22,11 @@ function App() {
           <Switch>
             <Route path="/create">
               <Create/>
+            </Route>
+          </Switch>
+          <Switch>
+            <Route path="/blogs/:id">
+              <BlogDetails/>
             </Route>
           </Switch>
           {/* <h1>App component</h1>
