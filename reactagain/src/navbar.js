@@ -5,9 +5,13 @@ const  Navbar =() =>{
             <h1>The Reacting Blog</h1>
             <div className = "links">
                 <a href="/">Home</a>
-                <a href="/create">Add blog</a>
+                <a href="/create" /*style={{
+                    color:"white",
+                    backgroundColor:"#f1356d",
+                    borderRadius: '5px'
+                }}*/>Add blog</a>
             </div>
-        </nav>
+        </nav> 
     );
 }
 export default Navbar;
