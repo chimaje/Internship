@@ -33,3 +33,17 @@
   margin: 40px auto;
   padding: 20px;
 }
+.blog_preview{
+   border-bottom: 3px solid chocolate;
+   padding: 15px 16px;
+   margin: 20px 0;
+}
+.blog_preview:hover{
+    background-color: rosybrown;
+    box-shadow: 2px 3px 6px black;
+}
+.blog_preview h3{
+    font-size: 20px;
+    color: #f1356d;
+    margin-bottom: 8px;
+}
