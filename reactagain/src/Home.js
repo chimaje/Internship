@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Bloglist from "./bloglist";
 
 const Home = ()=>{
     // let names = 'mario';
@@ -19,15 +20,15 @@ const Home = ()=>{
     const handclickaga =(name,e)=>{
         console.log('hello '+ name ,e.target)
     }
+    const handleDelete=(id)=>{
+        const new_blog = blogs.filter(blog=>blog.id !== id);
+        setBlogs(new_blog);
+    }
     return(
         <div className="home">
             <h2> Home Page</h2>
-            {blogs.map((blog)=>(
-                <div className="blog_preview" key={blog.id}>
-                    <h3>{blog.title}</h3>
-                    <p> Written by {blog.author}</p>
-                </div>
-            ))}
+            <Bloglist blogger={blogs} title="All Blogs" handleDelete={handleDelete}/>
+            <Bloglist blogger={blogs.filter((blogs)=>blogs.author==='mario')} title="Mario's Blogs"/>
             <p>{names} is {age} years old</p>
             <button onClick={(handclick)}>Click me</button>
             <button onClick={(e) =>handclickaga(prompt("What is your name?"),e)}> Click me again</button>
