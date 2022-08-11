@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './components/navbar';
 import Home from './components/Home';
-import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
+import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
 import Create from './components/Create';
 import BlogDetails from './components/BlogDetails';
 import NotFound from './components/404Error';
@@ -14,7 +14,7 @@ function App() {
       <div className="App">
         <Navbar />
         <div className="content">
-          <Switch>
+          <Routes>
             <Route exact path="/">
               <Home/>
             </Route>
@@ -30,7 +30,7 @@ function App() {
             <Route path="*">
                 <NotFound/>
               </Route>
-          </Switch>
+          </Routes>
           {/* <h1>App component</h1>
           <h1> {title}</h1>
           <p>Liked {likes} times</p>
