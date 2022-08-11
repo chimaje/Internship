@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 const Create = () => {
     const[title,setTitle]=useState('');
     const[body,setBody] = useState('');
-    const[author,setAuthor] = useState('');
+    const[author,setAuthor] = useState('yoshi');
     const[isPending,setIspending]=useState(false);
     const Before = useHistory() 
     const Submit =(e)=>{
@@ -42,6 +42,7 @@ const Create = () => {
                 </input>
                 {!isPending&&<button>Add Blog</button>}
                 {isPending&& <button disabled>Blog is being added</button>}
+            
             </form>
         </div>
      );

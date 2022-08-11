@@ -18,12 +18,15 @@ function App() {
             <Route exact path="/">
               <Home/>
             </Route>
+
             <Route path="/create">
               <Create/>
             </Route>
+
             <Route path="/blogs/:id">
               <BlogDetails/>
             </Route>
+
             <Route path="*">
                 <NotFound/>
               </Route>
