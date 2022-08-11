@@ -1,10 +1,10 @@
 import './App.css';
-import Navbar from './navbar';
-import Home from './Home';
+import Navbar from './components/navbar';
+import Home from './components/Home';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
-import Create from './Create';
-import BlogDetails from './BlogDetails';
-
+import Create from './components/Create';
+import BlogDetails from './components/BlogDetails';
+import NotFound from './components/404Error';
 function App() {
   // const title='welcome to the new blog';
   // const likes=50;
@@ -18,16 +18,15 @@ function App() {
             <Route exact path="/">
               <Home/>
             </Route>
-          </Switch>
-          <Switch>
             <Route path="/create">
               <Create/>
             </Route>
-          </Switch>
-          <Switch>
             <Route path="/blogs/:id">
               <BlogDetails/>
             </Route>
+            <Route path="*">
+                <NotFound/>
+              </Route>
           </Switch>
           {/* <h1>App component</h1>
           <h1> {title}</h1>
