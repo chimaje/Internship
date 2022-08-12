@@ -1,3 +1,6 @@
+*{
+  background-color:#ffe23d;
+}
 .navbar {
   padding: 20px;
   display: flex;
@@ -16,6 +19,7 @@
   margin-left: auto;
 }
 .navbar a{
+  font-size: 23px;
   margin-left: 16px;
   text-decoration: none;
   color: black;
@@ -26,21 +30,29 @@
   text-decoration-color: blue;
 }
 .Lists{
-  top: 120px;
   text-align: center;
 }
 .listing{
-  text-align: center;
   font-size: 29px;
-  padding: 15px 16px;
-   margin: 0 auto;
+  padding: 20px 16px;
+  margin: 2px auto;
 }
 .listing input{
-  top:0;
+  top:0px;
   left: 0;
-  height:23px;
+  height:20px;
   width: 25px;
-
+  
+}
+.listing .buttin{
+  position: static;
+  margin-left: 50px;
+  padding: 7px 8px;
+  border-radius: 2.5em;
+  border-color: #0ccef5;
+}
+.listing label{
+  padding-bottom: 20px;
 }
 .create{
   max-width: 400px;
@@ -48,12 +60,14 @@
   text-align: center;
 }
 .create label{
+  color: rgb(10, 73, 244);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   text-align: left;
   display: block;
 }
 .create input{
+  font-size: 20px;
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
@@ -61,6 +75,9 @@
   box-sizing: border-box;
   display: block;
 }
-.Lists button{
-  text-align: left;
+.create button{
+  font-size: larger;
+  padding: 7px 8px;
+  border-radius: 2.5em;
+  border-color: #0ccef5;
 }

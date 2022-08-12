@@ -2,7 +2,7 @@ import { useState } from "react";
 import {  useNavigate } from "react-router-dom";
 
 const Create = () => {
-    const[title,setTitle]=useState('Add item');
+    const[title,setTitle]=useState('');
     const[isPending,setIspending]=useState(false);
     let navigate = useNavigate();
     const Submit =(e)=>{
@@ -27,7 +27,7 @@ const Create = () => {
                <input
                 type="text"
                 required
-                value={title}
+                value={title} placeholder="Add item"
                 onChange={(e) => setTitle(e.target.value)}
                 />
                {!isPending&&<button>Add</button>}
